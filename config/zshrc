@@ -1,4 +1,5 @@
-# Luke's config for the Zoomer Shell
+# Marvins zhs config
+# some parts copied from Luke's config for the Zoomer Shell
 
 # Enable colors and change prompt:
 autoload -U colors && colors
@@ -14,13 +15,32 @@ autoload -U compinit
 zstyle ':completion:*' menu select
 zmodload zsh/complist
 compinit
-_comp_options+=(globdots)		# Include hidden files.
+#_comp_options+=(globdots)		# Include hidden files.
+
+
+# add ruby to path
+PATH=$PATH:~/.gem/ruby/2.6.0/bin
+PATH=$PATH:~/.gem/ruby/2.7.0/bin
+
+
+# Aliases
+
+# makes the ls command more useful
+alias ls="ls -long -h --color=yes --group-directories-first"
 
 
 
-# Load aliases and shortcuts if existent.
-[ -f "$HOME/.config/shortcutrc" ] && source "$HOME/.config/shortcutrc"
-[ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
+# Load git prompt
+# source /usr/lib/zsh-git-prompt/zshrc.sh
+
+# Load autosuggestion
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Load zsh-powerline
+source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 # Load zsh-syntax-highlighting; should be last.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
