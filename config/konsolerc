@@ -1,0 +1,31 @@
+[Desktop Entry]
+DefaultProfile=default.profile
+
+[Favorite Profiles]
+Favorites=
+
+[KFileDialog Settings]
+detailViewIconSize=0
+
+[KonsoleWindow]
+AllowMenuAccelerators=true
+ShowWindowTitleOnTitleBar=true
+UseSingleInstance=true
+
+[MainWindow]
+Height 1080=1021
+Height 1200=1141
+State=AAAA/wAAAAD9AAAAAAAAB4AAAAPfAAAABAAAAAQAAAAIAAAACPwAAAAA
+ToolBarsMovable=Disabled
+Width 1920=1920
+Window-Maximized 1080x1920=true
+Window-Maximized 1200x1920=true
+
+[Notification Messages]
+CloseAllEmptyTabs=true
+CloseAllTabs=true
+
+[TabBar]
+NewTabButton=true
+TabBarPosition=Top
+TabBarVisibility=AlwaysShowTabBar 
